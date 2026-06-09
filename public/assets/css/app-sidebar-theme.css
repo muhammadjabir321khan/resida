@@ -1,0 +1,145 @@
+/**
+ * Sidebar: single cohesive surface + readable links (overrides Metronic + Access theme).
+ */
+
+/* Header compact logo (Metronic brand strip) */
+.app-header-brand-logo {
+	width: 36px;
+	height: 36px;
+	object-fit: contain;
+}
+
+/* Custom app brand (replaces Metronic default logo area in aside) */
+#kt_aside .aside-brand {
+	border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+	margin-bottom: 0.25rem;
+}
+
+#kt_aside .aside-brand__link {
+	transition: opacity 0.2s ease;
+}
+
+#kt_aside .aside-brand__link:hover {
+	opacity: 0.92;
+}
+
+#kt_aside .aside-brand__mark {
+	filter: drop-shadow(0 2px 8px rgba(56, 189, 248, 0.15));
+}
+
+#kt_aside .aside-brand__title {
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	letter-spacing: 0.02em;
+}
+
+#kt_aside .aside-brand__tag {
+	color: #7dd3fc !important;
+	letter-spacing: 0.1em;
+}
+
+[data-kt-aside-minimize="on"] #kt_aside .aside-brand__text {
+	display: none !important;
+}
+
+[data-kt-aside-minimize="on"] #kt_aside .aside-brand__link {
+	justify-content: center;
+}
+
+[data-kt-aside-minimize="on"] #kt_aside .aside-brand {
+	padding-left: 0.65rem !important;
+	padding-right: 0.65rem !important;
+}
+
+/* One continuous background — no navy vs grey mismatch */
+#kt_aside.aside {
+	background: linear-gradient(180deg, #0f172a 0%, #1e293b 55%, #1e293b 100%) !important;
+	border-right: 1px solid rgba(15, 23, 42, 0.9) !important;
+	box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.04);
+}
+
+#kt_aside .aside-menu,
+#kt_aside .aside-menu.flex-column-fluid {
+	background: transparent !important;
+}
+
+#kt_aside #kt_aside_menu_wrapper {
+	margin-top: 0.35rem !important;
+}
+
+/* Menu text & icons — higher contrast */
+#kt_aside .menu-title {
+	color: #e2e8f0 !important;
+}
+
+#kt_aside .menu-link {
+	color: #f1f5f9 !important;
+	padding-top: 0.55rem !important;
+	padding-bottom: 0.55rem !important;
+	padding-left: 0.65rem !important;
+	padding-right: 0.65rem !important;
+	margin: 2px 0.4rem !important;
+	border-radius: 0.5rem !important;
+}
+
+#kt_aside .menu-link .menu-title {
+	font-weight: 500 !important;
+	font-size: 0.9rem !important;
+	letter-spacing: 0.01em;
+}
+
+#kt_aside .menu-icon,
+#kt_aside .menu-icon i,
+#kt_aside .menu-icon .ki-duotone {
+	color: #94a3b8 !important;
+}
+
+#kt_aside .menu-link:hover {
+	background: rgba(56, 189, 248, 0.12) !important;
+}
+
+#kt_aside .menu-link:hover .menu-title {
+	color: #ffffff !important;
+}
+
+#kt_aside .menu-link:hover .menu-icon,
+#kt_aside .menu-link:hover .menu-icon i {
+	color: #7dd3fc !important;
+}
+
+#kt_aside .menu-link.active,
+#kt_aside .menu-link.here,
+#kt_aside .menu-item.here > .menu-link {
+	background: rgba(56, 189, 248, 0.2) !important;
+}
+
+#kt_aside .menu-link.active .menu-title,
+#kt_aside .menu-link.here .menu-title,
+#kt_aside .menu-item.here > .menu-link .menu-title {
+	color: #ffffff !important;
+	font-weight: 600 !important;
+}
+
+#kt_aside .menu-link.active .menu-icon,
+#kt_aside .menu-link.active .menu-icon i,
+#kt_aside .menu-item.here > .menu-link .menu-icon i {
+	color: #38bdf8 !important;
+}
+
+/* Section headings if used */
+#kt_aside .menu-heading {
+	color: #94a3b8 !important;
+	font-size: 0.7rem !important;
+	letter-spacing: 0.06em;
+}
+
+/* Dividers between groups */
+#kt_aside .separator {
+	border-color: rgba(148, 163, 184, 0.28) !important;
+	margin-left: 0.65rem !important;
+	margin-right: 0.65rem !important;
+}
+
+/* Submenu / accordion arrows */
+#kt_aside .menu-arrow::after {
+	filter: brightness(1.4);
+}

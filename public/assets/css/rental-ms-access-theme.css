@@ -1,0 +1,238 @@
+/**
+ * Microsoft Access–inspired UI overrides for rental + dashboard.
+ * Scoped under body.rental-ms-access-ui — does not affect other areas.
+ */
+
+body.rental-ms-access-ui {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+	-webkit-font-smoothing: antialiased;
+}
+
+body.rental-ms-access-ui #kt_body,
+body.rental-ms-access-ui .wrapper,
+body.rental-ms-access-ui #kt_content {
+	background-color: #e8e8e8 !important;
+}
+
+/* Access-style caption / title bar */
+body.rental-ms-access-ui .access-app-caption-bar {
+	background: linear-gradient(180deg, #5b7fa6 0%, #3d5a80 45%, #2f4a6e 100%);
+	color: #fff;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 6px 14px;
+	margin: -1rem -1.5rem 1rem -1.5rem;
+	border: 1px solid #2a3f56;
+	border-bottom: 1px solid #1f2d3d;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+	letter-spacing: 0.02em;
+}
+
+body.rental-ms-access-ui .access-app-caption-bar small {
+	font-weight: 400;
+	opacity: 0.9;
+}
+
+/* Sidebar colors: see app-sidebar-theme.css (loaded after this file). */
+
+/* Header strip — flatter office gray */
+body.rental-ms-access-ui #kt_header {
+	background: #f0f0f0 !important;
+	border-bottom: 1px solid #a0a0a0 !important;
+	box-shadow: none !important;
+}
+
+/* Main workspace container */
+body.rental-ms-access-ui #kt_content_container.container-xxl {
+	max-width: 100% !important;
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+
+/* “Group box” cards */
+body.rental-ms-access-ui .card {
+	background: #fbfbfb !important;
+	border: 1px solid #8b8b8b !important;
+	border-radius: 2px !important;
+	box-shadow:
+		inset 1px 1px 0 #fff,
+		inset -1px -1px 0 #d0d0d0 !important;
+}
+
+body.rental-ms-access-ui .card-header {
+	background: linear-gradient(180deg, #fafafa 0%, #e3e3e3 100%) !important;
+	border-bottom: 1px solid #9d9d9d !important;
+	min-height: auto !important;
+	padding-top: 0.65rem !important;
+	padding-bottom: 0.65rem !important;
+}
+
+body.rental-ms-access-ui .card-header h2,
+body.rental-ms-access-ui .card-title h2 {
+	font-size: 1.1rem !important;
+	font-weight: 600 !important;
+	color: #1a1a1a !important;
+}
+
+body.rental-ms-access-ui .card-footer {
+	background: #ececec !important;
+	border-top: 1px solid #b0b0b0 !important;
+}
+
+/* Form controls — datasheet / Access form */
+body.rental-ms-access-ui .form-control,
+body.rental-ms-access-ui .form-control-solid {
+	background: #fff !important;
+	border: 1px solid #7a7a7a !important;
+	border-radius: 1px !important;
+	color: #111 !important;
+	font-size: 13px !important;
+}
+
+/*
+ * Selects: use background-color only. Shorthand `background` removes Bootstrap’s
+ * form-select chevron (background-image).
+ */
+body.rental-ms-access-ui .form-select,
+body.rental-ms-access-ui .form-select-solid {
+	background-color: #fff !important;
+	border: 1px solid #7a7a7a !important;
+	border-radius: 1px !important;
+	color: #111 !important;
+	font-size: 13px !important;
+}
+
+body.rental-ms-access-ui .form-control:focus,
+body.rental-ms-access-ui .form-select:focus {
+	border-color: #4a6ea9 !important;
+	box-shadow: 0 0 0 1px rgba(74, 110, 169, 0.35) !important;
+}
+
+body.rental-ms-access-ui .col-form-label {
+	color: #222 !important;
+	font-size: 12px !important;
+}
+
+/* Buttons — classic gray + one accent */
+body.rental-ms-access-ui .btn {
+	border-radius: 2px !important;
+	font-size: 12px !important;
+	font-weight: 600 !important;
+	border: 1px solid #6a6a6a !important;
+	padding: 0.35rem 0.85rem !important;
+}
+
+body.rental-ms-access-ui .btn-light {
+	background: linear-gradient(180deg, #fff 0%, #e8e8e8 100%) !important;
+	color: #111 !important;
+}
+
+body.rental-ms-access-ui .btn-primary {
+	background: linear-gradient(180deg, #5a7fc0 0%, #3d5a8a 100%) !important;
+	border: 1px solid #2f4568 !important;
+	color: #fff !important;
+}
+
+body.rental-ms-access-ui .btn-sm {
+	font-size: 11px !important;
+	padding: 0.2rem 0.5rem !important;
+}
+
+body.rental-ms-access-ui .btn-light-primary {
+	background: linear-gradient(180deg, #eef3fb 0%, #d4deef 100%) !important;
+	border: 1px solid #7a8faf !important;
+	color: #1a3560 !important;
+}
+
+body.rental-ms-access-ui .btn-light-danger {
+	background: linear-gradient(180deg, #fff5f5 0%, #f0d4d4 100%) !important;
+	border: 1px solid #b08080 !important;
+	color: #6b1a1a !important;
+}
+
+/* Tables — datasheet */
+body.rental-ms-access-ui .table {
+	font-size: 12px !important;
+	border: 1px solid #7a7a7a !important;
+	background: #fff !important;
+}
+
+body.rental-ms-access-ui .table thead th {
+	background: linear-gradient(180deg, #ececec 0%, #d4d4d4 100%) !important;
+	border: 1px solid #9a9a9a !important;
+	color: #111 !important;
+	font-weight: 600 !important;
+	text-transform: none !important;
+	font-size: 11px !important;
+}
+
+body.rental-ms-access-ui .table tbody td {
+	border: 1px solid #c5c5c5 !important;
+	color: #111 !important;
+}
+
+body.rental-ms-access-ui .table.table-row-dashed tbody tr {
+	border-bottom-color: #c5c5c5 !important;
+}
+
+body.rental-ms-access-ui .dataTables_wrapper .dataTables_length,
+body.rental-ms-access-ui .dataTables_wrapper .dataTables_filter,
+body.rental-ms-access-ui .dataTables_wrapper .dataTables_info,
+body.rental-ms-access-ui .dataTables_wrapper .dataTables_paginate {
+	font-size: 12px !important;
+}
+
+body.rental-ms-access-ui .page-item .page-link {
+	border-radius: 0 !important;
+	border: 1px solid #8a8a8a !important;
+	font-size: 12px !important;
+}
+
+/* Badges — flatter */
+body.rental-ms-access-ui .badge {
+	border-radius: 2px !important;
+	font-weight: 600 !important;
+	font-size: 10px !important;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Alerts */
+body.rental-ms-access-ui .alert {
+	border-radius: 2px !important;
+	border-width: 1px !important;
+	font-size: 12px !important;
+}
+
+/* Dashboard KPI cards from partial */
+body.rental-ms-access-ui .card.card-flush,
+body.rental-ms-access-ui .card.card-bordered {
+	border: 1px solid #8b8b8b !important;
+	box-shadow:
+		inset 1px 1px 0 #fff,
+		inset -1px -1px 0 #d8d8d8 !important;
+}
+
+/* Square corners for normal checkboxes only — switches need a pill + thumb layout */
+body.rental-ms-access-ui .form-check:not(.form-switch) .form-check-input {
+	border-radius: 2px !important;
+	border: 1px solid #555 !important;
+}
+
+/* Toggle switches: pill shape was flattened by the rule above; OFF state needs a darker track vs white thumb */
+body.rental-ms-access-ui .form-switch .form-check-input {
+	border-radius: 2rem !important;
+	border: 1px solid #4a4a4a !important;
+}
+
+body.rental-ms-access-ui .form-switch .form-check-input:not(:checked) {
+	background-color: #5a6169 !important;
+}
+
+body.rental-ms-access-ui .form-switch .form-check-input:checked {
+	background-color: #3d5a8a !important;
+	border-color: #2a3f56 !important;
+}
+
+body.rental-ms-access-ui .text-muted {
+	color: #555 !important;
+}

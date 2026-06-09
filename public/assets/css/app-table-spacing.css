@@ -1,0 +1,32 @@
+/**
+ * Extra horizontal spacing for ID (first) and Actions (last) columns
+ * on DataTables / list views inside the main content area.
+ */
+#kt_content_container .table thead th:first-child,
+#kt_content_container .table tbody td:first-child {
+	padding-left: 1.25rem !important;
+}
+
+#kt_content_container .table thead th:last-child,
+#kt_content_container .table tbody td:last-child {
+	padding-right: 1.25rem !important;
+	padding-left: 1.25rem !important;
+}
+
+/* Action button groups in the last column */
+#kt_content_container .table tbody td:last-child .d-flex.gap-1,
+#kt_content_container .table tbody td:last-child .d-flex.flex-shrink-0.gap-1 {
+	gap: 0.65rem !important;
+}
+
+/* DataTables scroll / responsive wrappers */
+#kt_content_container .dataTables_wrapper .table thead th:first-child,
+#kt_content_container .dataTables_wrapper .table tbody td:first-child {
+	padding-left: 1.25rem !important;
+}
+
+#kt_content_container .dataTables_wrapper .table thead th:last-child,
+#kt_content_container .dataTables_wrapper .table tbody td:last-child {
+	padding-right: 1.25rem !important;
+	padding-left: 1.25rem !important;
+}
