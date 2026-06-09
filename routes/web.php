@@ -26,7 +26,7 @@ use App\Http\Controllers\Tenant\TenantRentPaymentController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('tenant/invite/{token}', [TenantInviteController::class, 'show'])->name('tenant.invite.show');
